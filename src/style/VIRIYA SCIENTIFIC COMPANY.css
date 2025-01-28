@@ -1,0 +1,198 @@
+@page {
+    size: A4;
+    margin: 0; /* Remove page margins */
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: white;  /* Set the whole page background to white */
+    color: #2c6536;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.invoice {
+    width: 100%;
+    max-width: 700px;  /* Keep the invoice within A4 size */
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #ffe9e2; /* Set invoice background color */
+    box-sizing: border-box;
+}
+
+.invoice-content {
+    border: 2px solid #2c6536; /* Add a border inside the invoice */
+    padding: 20px;  /* Padding inside the border */
+    box-sizing: border-box;  /* Ensures the padding is within the content box */
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid #2c6536;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: -10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header .underline {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: -5px;
+    height: 2px;
+    background-color: #2c6536;
+}
+
+.header h2 {
+    position: relative;
+    margin: 1px 0;
+    font-size: 18px;
+    margin-top: 22px;
+    text-transform: uppercase;
+}
+
+.header h2 .underline {
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: -13px;
+    height: 2px;
+    background-color: #2c6536;
+}
+
+.header .logo {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #2c6536;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .logo img {
+    width: 50px;  /* Adjust the size of the image */
+    height: 50px;  /* Adjust the size of the image */
+    border-radius: 1px;
+    margin-top: -5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.details div {
+    width: 48%;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 50px;
+}
+table {
+    width: 620px;  /* Set table width */
+    border-collapse: collapse;
+    padding-right: 100px; /* Adds right padding to the table */
+    margin-bottom: 20px;
+    margin-left: -22px; /* Move the table 20px to the right */
+}
+
+
+thead th {
+    border: 2px solid #2c6536; /* Add horizontal and vertical borders to header */
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #2c6536;
+    background-color: #ffe9e2; /* Optional: set a background color for the header */
+}
+
+tbody td {
+    border-left: 2px solid #2c6536; /* Add vertical borders to body */
+    border-right: 2px solid #2c6536;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    vertical-align: middle;
+    height: 40px;
+}
+
+tbody tr:last-child td {
+    border-bottom: 2px solid #2c6536; /* Add a border at the bottom of the last row */
+}
+
+.total {
+    display: flex;
+    margin-left: 440px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    border: 2px solid #2c6536;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align the footer items vertically */
+    border-top: 2px solid #2c6536; /* Add border at the top of the footer */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-left, .footer-right {
+    width: 45%;
+}
+
+.footer-divider {
+    height: 100%; /* Make the divider take up full height of footer */
+    width: 2px;
+    background-color: #2c6536; /* Divider color */
+    margin: 0 20px; /* Adjust space between the sections */
+}
+
+.footer-left p, .footer-right p {
+    font-size: 12px; /* Adjust font size */
+    margin: 0; /* Remove margin to prevent extra space */
+}
+
+.footer-right {
+    text-align: right; /* Align contact to the right */
+}
+
+
+.thank-you {
+    text-align: center;
+    left: -20px;
+    right: -20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative; /* For absolute positioning of the underline */
+}
+
+.thank-you::after {
+    content: '';
+    display: block;
+    width: 618px; /* Adjust the width of the underline */
+    height: 2px;  /* Adjust the thickness of the underline */
+    background-color: #2c6536; /* The color of the underline */
+    margin: 10px auto 0; /* Centers the underline and gives it some spacing */
+margin-bottom: -2px;
+}
