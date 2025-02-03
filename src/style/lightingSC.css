@@ -1,0 +1,162 @@
+/* A4 Page Setup */
+.proforma-invoice-container {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  padding: 15mm;
+  border: 1px solid #ddd;
+  background-color: #eaf4e8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header Section */
+.proforma-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.proforma-header-content {
+  padding-bottom: 10px;
+}
+
+.proforma-header-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3a873c;
+  margin: 0;
+}
+
+.proforma-header-sub-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.proforma-address {
+  width: 30%;
+  text-align: left;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.proforma-logo {
+  width: 30%;
+  text-align: center;
+}
+
+.proforma-logo-img {
+  width: 110px;
+  height: auto;
+}
+
+.proforma-invoice-title {
+  width: 30%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.proforma-invoice-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3a873c;
+  margin: 0;
+}
+
+/* Invoice Details */
+.proforma-invoice-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 14px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.proforma-invoice-details p {
+  margin: 0;
+}
+
+/* Invoice Table */
+.proforma-invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.proforma-invoice-table th,
+.proforma-invoice-table td {
+  border: 1px solid #333;
+  text-align: center;
+  padding: 8px;
+}
+
+.proforma-invoice-table th {
+  background-color: #cfe3cc;
+}
+
+/* Invoice Table Footer (Summary Section) */
+.proforma-invoice-table tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+}
+
+.proforma-invoice-table tfoot td {
+  padding: 8px;
+  border: none;
+}
+
+.proforma-invoice-table tfoot td:nth-last-child(2),
+.proforma-invoice-table tfoot td:last-child {
+  border: 1px solid #333;
+}
+
+/* Bank Details Section */
+.proforma-bank-details {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.proforma-footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.proforma-footer h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.proforma-footer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.proforma-footer-table td {
+  border: none;
+  text-align: left;
+  padding: 5px;
+}
+
+.proforma-totals td {
+  border: 1px solid #333;
+  text-align: right;
+  padding: 8px;
+}
+
+.proforma-totals td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+.proforma-totals td:last-child {
+  font-weight: normal;
+}
