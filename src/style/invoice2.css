@@ -1,0 +1,172 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Invoice container styling */
+.rakas-invoice-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.rakas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+.rakas-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rakas-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.rakas-invoice-title {
+    font-size: 1.5rem; /* Reduced size */
+    font-weight: bold;
+    text-align: right;
+    flex-grow: 1; /* Makes it push to the right */
+}
+
+/* Billed By, Billed To, and Invoice Details section alignment */
+.rakas-invoice-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rakas-billed-by, .rakas-billed-to, .rakas-invoice-details {
+    width: 32%; /* Adjust width as needed */
+    padding: 10px;
+}
+
+.rakas-billed-by h2, .rakas-billed-to h2, .rakas-invoice-details h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.rakas-billed-by p, .rakas-billed-to p, .rakas-invoice-details p {
+    margin: 5px 0;
+}
+
+/* Table styling */
+.rakas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.rakas-table th, .rakas-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.rakas-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Footer styling */
+.rakas-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.rakas-footer .rakas-terms {
+    width: 50%;
+}
+
+.rakas-footer .rakas-totals {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.rakas-footer .rakas-totals-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rakas-footer .rakas-totals-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.rakas-footer .rakas-totals-table tr:last-child td {
+    font-weight: bold;
+}
+
+.rakas-footer .rakas-bank-details {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.rakas-footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.rakas-footer p, .rakas-footer td {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Page footer with Invoice No, Date, and Page number */
+.rakas-page-footer {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 8px; /* Smaller font size for the page footer content */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rakas-footer-details p,
+.rakas-page-number p {
+    margin: 5px 0;
+    font-size: 10px; /* Reduced font size for invoice details and page number */
+}
+
+.rakas-footer-details {
+    width: 50%;
+}
+
+.rakas-page-number {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: auto;
+    font-size: 8px; /* Reduced font size for the page number */
+}
+
+/* Centered note at the bottom */
+.rakas-note {
+    width: 100%;
+    font-style: italic;
+    font-size: 3px; /* Reduced font size by 3px */
+    margin-top: 10px;
+    margin-left: -90px;
+}
